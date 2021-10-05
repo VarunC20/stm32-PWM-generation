@@ -137,20 +137,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		
-		
-		
-		
-		
-		
-		
-		
-		//compan = (((adc_val)/4095)*5);
+    //compan = (((adc_val)/4095)*5);
     //current = ((((adc_val)/4095)*5)-2.9)*10;
 		
-
-
-
-
 //Current Read
 HAL_ADC_Start(&hadc1);
 HAL_ADC_PollForConversion(&hadc1, 100);
@@ -164,9 +153,6 @@ __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1,80);
 
 HAL_GPIO_WritePin(GPIOB,GPIO_PIN_10,GPIO_PIN_SET);
 HAL_GPIO_WritePin(GPIOB,GPIO_PIN_11,GPIO_PIN_RESET);
-
-
-
 
   }
   /* USER CODE END 3 */
